@@ -155,17 +155,6 @@ const ContactSection = () => {
               
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <MapPin className="h-6 w-6 text-accent mt-0.5" />
-                  <div>
-                    <h4 className="font-medium text-primary">Headquarters</h4>
-                    <p className="text-primary/70 mt-1">
-                      1 Sandton Drive<br />
-                      Sandton, Johannesburg, South Africa
-                    </p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start space-x-4">
                   <Phone className="h-6 w-6 text-accent mt-0.5" />
                   <div>
                     <h4 className="font-medium text-primary">Phone</h4>
