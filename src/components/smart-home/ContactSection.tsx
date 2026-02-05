@@ -11,7 +11,14 @@ import { useToast } from "@/hooks/use-toast";
 const ContactSection = () => {
   const { toast } = useToast();
   
-  const form = useForm({
+  type ContactFormValues = {
+    name: string;
+    email: string;
+    phone: string;
+    message: string;
+  };
+
+  const form = useForm<ContactFormValues>({
     defaultValues: {
       name: "",
       email: "",
@@ -20,7 +27,7 @@ const ContactSection = () => {
     },
   });
 
-  const onSubmit = (data: any) => {
+  const onSubmit = (data: ContactFormValues) => {
     console.log(data);
     toast({
       title: "Message Sent",
@@ -152,8 +159,8 @@ const ContactSection = () => {
                   <div>
                     <h4 className="font-medium text-primary">Headquarters</h4>
                     <p className="text-primary/70 mt-1">
-                      101 Innovation Drive<br />
-                      San Francisco, CA 94107
+                      1 Sandton Drive<br />
+                      Sandton, Johannesburg, South Africa
                     </p>
                   </div>
                 </div>

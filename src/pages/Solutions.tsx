@@ -71,6 +71,12 @@ const Solutions = () => {
           </Card>
         </div>
       </main>
+      <footer className="bg-primary text-white py-6">
+        <div className="container max-w-6xl mx-auto px-4 text-center text-sm text-white/80">
+          This is a product of VeeIntellix M3 IT Solutions Pty Ltd. To get your own website,
+          kindly contact us at veerambaufx@gmail.com or WhatsApp 0849773199.
+        </div>
+      </footer>
     </div>
   );
 };

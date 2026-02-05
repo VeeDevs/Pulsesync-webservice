@@ -74,6 +74,10 @@ const FooterSection = ({ scrollToSection }: FooterSectionProps) => {
         </div>
         
         <div className="border-t border-white/20 mt-8 pt-8 text-center text-white/60 text-sm">
+          <p className="text-white/80 mb-2">
+            This is a product of VeeIntellix M3 IT Solutions Pty Ltd. To get your own website,
+            kindly contact us at veerambaufx@gmail.com or WhatsApp 0849773199.
+          </p>
           <p>&copy; {new Date().getFullYear()} PulseSync Home. All rights reserved.</p>
         </div>
       </div>

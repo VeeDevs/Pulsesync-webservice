@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Home, Globe, Menu, X, Moon, Sun, Smartphone, ArrowDown } from "lucide-react";
+import { Home, Globe, Menu, X, Smartphone, ArrowDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ContactForm } from "@/components/ContactForm";
@@ -9,7 +9,6 @@ import { motion } from "framer-motion";
 
 const Index = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(false);
   const isMobile = useIsMobile();
 
   const scrollToSection = (sectionId: string) => {
@@ -28,14 +27,9 @@ const Index = () => {
     setIsMenuOpen(false);
   };
 
-  const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode);
-    document.documentElement.classList.toggle('dark');
-  };
-
   return (
-    <div className={`min-h-screen ${isDarkMode ? 'dark' : ''}`}>
-      <header className="fixed top-0 left-0 right-0 bg-primary/95 dark:bg-gray-900/95 backdrop-blur-sm text-white py-4 z-50 shadow-lg">
+    <div className="min-h-screen">
+      <header className="fixed top-0 left-0 right-0 bg-primary/95 backdrop-blur-sm text-white py-4 z-50 shadow-lg">
         <div className="container max-w-6xl mx-auto flex items-center justify-between px-4">
           <div className="flex items-center">
             <img 
@@ -49,15 +43,6 @@ const Index = () => {
           </div>
           
           <div className="flex items-center gap-4">
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={toggleDarkMode}
-              className="text-white"
-            >
-              {isDarkMode ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
-            </Button>
-
             {isMobile && (
               <Button
                 variant="ghost"
@@ -490,7 +475,7 @@ const Index = () => {
           </div>
         </section>
 
-        <footer className="bg-primary dark:bg-gray-900 text-white py-8">
+        <footer className="bg-primary text-white py-8">
           <div className="container max-w-6xl mx-auto px-4">
             <div className="text-center">
               <div className="flex justify-center items-center gap-2 mb-4">
@@ -521,8 +506,12 @@ const Index = () => {
                   <Link to="/solutions">Solutions</Link>
                 </Button>
               </div>
+              <p className="text-sm text-white/80 mb-3">
+                This is a product of VeeIntellix M3 IT Solutions Pty Ltd. To get your own website,
+                kindly contact us at veerambaufx@gmail.com or WhatsApp 0849773199.
+              </p>
               <p className="text-sm">
-                © {new Date().getFullYear()} PulseSync Living. All rights reserved.
+                &copy; {new Date().getFullYear()} PulseSync Living. All rights reserved.
               </p>
             </div>
           </div>
@@ -533,3 +522,5 @@ const Index = () => {
 };
 
 export default Index;
+
+

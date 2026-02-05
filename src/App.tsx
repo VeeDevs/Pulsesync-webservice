@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import Solutions from "./pages/Solutions";
 import SmartHome from "./pages/SmartHome";
 import NotFound from "./pages/NotFound";
+import GlobalNavButtons from "@/components/GlobalNavButtons";
 
 const queryClient = new QueryClient();
 
@@ -17,6 +18,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <GlobalNavButtons />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/solutions" element={<Solutions />} />

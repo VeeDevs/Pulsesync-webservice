@@ -19,6 +19,10 @@ const NotFound = () => {
         <a href="/" className="text-blue-500 hover:text-blue-700 underline">
           Return to Home
         </a>
+        <p className="mt-6 text-sm text-gray-500 max-w-md mx-auto">
+          This is a product of VeeIntellix M3 IT Solutions Pty Ltd. To get your own website,
+          kindly contact us at veerambaufx@gmail.com or WhatsApp 0849773199.
+        </p>
       </div>
     </div>
   );
