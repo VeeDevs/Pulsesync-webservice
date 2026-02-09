@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Home, Globe, Menu, X, Smartphone, ArrowDown } from "lucide-react";
+import { Home, Globe, Menu, X, Smartphone, ArrowDown, Leaf } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ContactForm } from "@/components/ContactForm";
@@ -275,18 +275,7 @@ const Index = () => {
                 <Card className="h-full hover:shadow-lg transition-all duration-300">
                   <CardHeader className="pb-2">
                     <div className="flex justify-center mb-4">
-                      <svg
-                        className="w-16 h-16 text-primary"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path d="M4 12C4 8.68629 6.68629 6 10 6H14C17.3137 6 20 8.68629 20 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-                        <path d="M6 18H18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-                        <path d="M8 18V14C8 12.8954 8.89543 12 10 12H14C15.1046 12 16 12.8954 16 14V18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-                        <path d="M10 10V8" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-                        <path d="M14 10V8" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-                      </svg>
+                      <Leaf className="w-16 h-16 text-primary" />
                     </div>
                     <CardTitle className="text-2xl text-center">PulseSync Tracker</CardTitle>
                     <div className="flex justify-center mt-2">
