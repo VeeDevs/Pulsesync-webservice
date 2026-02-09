@@ -152,6 +152,22 @@ const ContactSection = () => {
           >
             <div className="glass-card p-8 rounded-xl h-full">
               <h3 className="text-2xl font-semibold mb-6 text-primary">Contact Information</h3>
+
+              <div className="rounded-lg border border-primary/10 bg-primary/5 p-4 mb-6">
+                <h4 className="text-lg font-semibold text-primary">PulseSync Tracker</h4>
+                <p className="text-primary/70 mt-1">
+                  Farm management tool to track and manage animals and resources.
+                </p>
+                <Button asChild className="mt-3 bg-primary hover:bg-primary/90 text-white">
+                  <a
+                    href="https://pulsesynctracker.web.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Open PulseSync Tracker
+                  </a>
+                </Button>
+              </div>
               
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
